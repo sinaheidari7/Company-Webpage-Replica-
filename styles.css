@@ -1,0 +1,677 @@
+/*
+===
+Fonts
+===
+*/
+
+body{
+  letter-spacing: 1px;
+  color: var(--clr-primary);
+  font-family:'Dosis', sans-serif;
+}
+
+/*
+===
+Variables
+===
+*/
+
+:root{
+  --clr-primary: white;
+  --clr-primary-light: grey;
+  --clr-primary-black: black;
+  --transition: all 0.3s linear;
+  --spacing: 0.25 rem
+  --radius: 0.25 rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+========
+navbar
+========
+*/
+
+.topnav{
+  background-color: transparent;
+  position: sticky;
+}
+
+ul {
+  height: 4rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 4;
+  display: table;
+  overflow: hidden;
+  background-color: transparent;
+  background: transparent;
+  top: 0;
+  font-size: 1rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: 1px;
+  position: sticky;
+  z-index: 1; 
+}
+
+li {
+  float: left;
+  position: relative;
+}
+
+li a {
+  display: table-cell; 
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  transition: 1s ease;
+}
+
+
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+  text-decoration: bolder;
+}
+
+
+.logo{
+  width: 2rem;
+  padding: 0;
+  margin:auto;
+  margin-top: 1rem;
+  left: 57%;
+  position: absolute;
+}
+
+.search-box{
+  position: relative;
+  background: white;
+  height: 40px;
+  border-radius: 40px;
+  margin-left: 73rem;
+  margin-top: 0.8rem;
+  border: solid;
+  z-index: 1;
+}
+
+.search-box{
+  background: whitesmoke;
+}
+
+.search-box:hover .search-hover{
+  color: transparent;
+  display: none;
+}
+
+.search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+  background: white;
+}
+
+.search-btn{
+  color: black;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.search-txt{
+  border:none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size: 15px;
+  transition: 1s;
+  line-height: 40px;
+  width: 0px;
+}
+
+
+/*End of Navbar*/
+body{
+  background:var(--clr-primary-black);
+  color: var(--clr-primary);
+  line-height: 1;
+  font-size: 0.875 rem;
+  letter-spacing: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--clr-primary);
+  color: black;
+}
+
+img{
+  width: 100%;
+  display: block;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out; 
+}
+
+
+h1,a{
+  letter-spacing: 2;
+}
+
+
+h1,h2,h3,h4{
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 0.1;
+  margin-bottom: 0.75 rem;
+}
+
+
+h1{
+  font-size: 3 rem;
+  letter-spacing: 0.8rem;
+}
+
+h2{
+  font-size: 2 rem;
+}
+
+h3{
+  font-size: 1.5 rem;
+}
+
+h4{
+  font-size: 1rem;
+}
+
+p{
+  margin-bottom: 1.25 rem;
+}
+
+
+@media screen and (min-width:800px){
+
+h1{
+  font-size: 4 rem;
+}
+
+h2{
+  font-size: 2.5 rem;
+}
+
+h3{
+  font-size: 2 rem;
+}
+
+h4{
+  font-size: 1 rem;
+}
+
+body{
+  font-size: 1rem;
+}
+}
+
+/*
+=== 
+Header
+===
+*/
+
+.header2
+{
+  min-height:100vh;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
+  url("../images/ezgif.com-webp-to-jpg.jpg") center/cover no-repeat fixed;
+  transition: 7s;
+  opacity: 70%;
+  position: relative;
+  background-color: black;
+  animation: fadeIn 7s forwards;
+  -webkit-animation: fadeIn 7s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+70% {opacity:1;}
+}
+  /*
+  ===
+  Animation
+
+  animation:  .4s ease-out;
+  ===
+  */
+  
+
+  .banner{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform:translate;
+    animation: fadeIn  3s forwards;
+    -webkit-animation: fadeIn 3s forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+  
+  .banner-btn{
+    animation: 6s;
+    animation-delay: 4s;
+    cursor: pointer;
+  }
+
+  .banner h2{
+    color: var(--clr-primary);
+  }
+
+  .banner h1{
+    color: var(--clr-primary);
+    margin-top: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .banner-btn{
+    color: var(--clr-primary-black);
+    padding: 0.75rem 1rem;
+    display: inline-block;
+    font-weight: 700;
+    transition: var(--transition);
+    font-size: 1rem;
+    border: none;
+    cursor: circle;
+    left:50%;
+    
+  }
+
+
+  .banner-btn{
+    color: var(--clr-primary);
+    opacity: 100%;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    background: rgba(255,255,255,0.7);
+    border-radius: 30px;
+    display: inline-flex;
+    height: 46px;
+    transition: background-color .4s;
+    width: 260px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  
+  .banner-btn:hover{
+    background-color: white;
+    opacity: 200%;
+  }
+  
+  /* End of Banner*/
+
+  
+
+.build-heading{
+  color: black;
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 0.1;
+  position: absolute;
+  margin-left: 29rem;
+  margin-top: 4rem; 
+  letter-spacing: 0.5rem;
+  font-weight: 350;
+  font-style: normal;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin:0px;
+  padding:100px;
+  background: white;
+  
+}
+
+.build {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 284px; 
+  margin:60px;
+}
+
+.img{
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+  height: 300px;
+  transition: transform .5s ease;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.image-container1{
+  background: black;
+  max-width: 40rem;
+  overflow: hidden;
+  cursor: pointer;
+  margin-right: 3rem;
+
+}
+
+.image-container2{
+  background: black;
+  max-width: 40rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-container3{
+  background: black;
+  max-width: 40rem;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+.img{
+  transition: var(--transition);
+  width: 25rem;
+}
+
+.img:hover{
+  transform: scale(1.05);
+  color: black;
+  opacity: 0.7;
+}
+
+.heading1, .heading2, .heading3{
+  color: black;
+  text-align: center;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.3rem;
+  font-weight: 500;
+  font-style: normal;
+  width: 25rem;
+}
+
+.heading1{
+  margin-left: -3rem;
+}
+
+.heading3{
+  margin-right: -3rem;
+}
+
+p {
+  text-align: left;
+  color: black;
+  width: 25rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.3rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: .05714em;
+  text-align: justify;
+}
+
+.paragraph1{
+  margin-left: -2.5rem;
+}
+
+.paragraph3{
+  margin-right: -2.5rem;
+}
+
+@media screen and (min-width:400px){
+  .skill{
+    float: left;
+    width: 50%;
+
+  }
+}
+
+@media screen and (min-width:1200px){
+  .skill{
+    float: left;
+    width: 25%;
+    
+  }
+}
+
+/*Section*/
+
+.section-title{
+  color: white;
+  position: absolute;
+  margin-top: 3.5rem;
+  margin-left: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: 200;
+  font-style: normal;
+  
+}
+
+.section-center{
+  padding: 0;
+  width: 15vw;
+  
+}
+
+@media screen and (min-width:992px){
+  .section-center{
+    width: 95vw;
+    padding: 4rem 1rem;
+  }
+}
+
+
+/*
+=========
+About
+========
+*/
+
+.text-container{
+  position: relative;
+}
+
+.about-text{
+  max-width: 35rem;
+  color:white;
+  text-align: left;
+  position: relative;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.3rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.banner-btn2{
+    background-color: transparent;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 1.5rem 3.5rem;
+    transition: var(--transition);
+    font-size: 15px;
+    border-style: solid;
+    border-color: white;
+    cursor: pointer;
+    display: inline-flex;
+    height: 46px;
+    width: 260px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:16rem;
+    left: 3.5%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+.banner-btn2:hover{
+  border-color: lightgrey;
+  color: lightgrey;
+  
+}
+
+.about-img, .about-info{
+  padding: 2rem 0;
+}
+
+.about-picture-container{
+  background: black;
+  width: 40rem;
+  overflow: hidden;
+  margin-left: 10rem;
+  border-radius:0.8px;
+  cursor: pointer;
+}
+.about-picture{
+  transition: var(--transition);
+  width: 40rem;
+  position: relative;
+}
+
+.about-picture-container:hover .about-picture{
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.about-picture-container, .about-text{
+  float: left;
+  width: 100%;
+}
+
+@media screen and (min-width:992px){
+  .about-img, .about-info{
+    float: left;
+    width: 50%;
+  }
+}
+
+/*part2*/
+.part2{
+  width: 100%;
+  padding: 0rem;
+  background: white;
+  margin-top: 23rem;
+  height: 60%;
+  z-index: 1;
+}
+
+.part-title{
+  color: black;
+  text-align: center;
+  margin-top: 5rem;
+  position: absolute;
+  margin-left: 26rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.desc{
+  text-align: center;
+  position: relative;
+  margin-top: 8rem;
+  margin-left: 12rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.5rem;
+  display: block;
+  font-weight: 300;
+  font-style: normal;
+  width: 70rem;
+  text-rendering: optimizeLegibility;
+}
+
+.part2-img{
+  padding: 0rem;
+  margin-top: 3rem;
+  padding: 0;
+  position: relative;
+  width: 85rem;
+  margin-right: 5rem;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.social-icon{
+  color: white;
+  margin-left: 3rem;
+}
+
+.footer{
+  background: black;
+  text-align:center;
+  font-family: 'Helvetica', 'Arial' sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.5rem;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 2rem;
+}
